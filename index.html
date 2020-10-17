@@ -10,19 +10,20 @@
         .footer-country {
             position: fixed;
             width: 100%;
-            height: 5%;
+            height: 40px;
             left: 0;
-            bottom: 5%;
-            background-color: rgb(230, 222, 222);
+            bottom: 40px;
+            background-color: rgba(211, 203, 203, 0.575);
             border: 1px solid grey;
+            color:grey;
         }
-        .footer {
+        .footer-links {
             position: fixed;
             width: 100%;
-            height: 5%;
+            height: 40px;
             left: 0;
             bottom: 0;
-            background-color: rgb(230, 222, 222);
+            background-color: rgba(211, 203, 203, 0.575);
         }
         .center {
             margin:auto;
@@ -63,7 +64,16 @@
             color: black;
             font-size: 12px;
         }
-
+        .footer-country li {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top:3px;
+        }
+        .footer-links a:link {
+            color: grey;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
     </style>
 
     <Header>
@@ -80,6 +90,7 @@
         </div>
         </ul>
     </Header>
+
     <body> 
         <div class="center">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
@@ -103,26 +114,29 @@
             Google offered in: <li><a href="#" style="color:blue">Français</a></li>
         </div>
     </body>
+
     <br>
+
     <footer>
         <ul>
             <div class="footer-country">
-                <li style="float:left">
+                <li style="float:left; margin-top: 2px;">
                 Canuckistan
                 </li>
             </div>
         </ul>
         <ul>
-        <div class="footer">
-            <li style="float:left">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
-            </li>
-            <li style="float:right">
+        <div class="footer-links">
+            <li style="float:left; margin-top: 2px;">
                 <a href="#">Advertising</a>
                 <a href="#">Business</a>
                 <a href="#">How Search works</a>
+
+            </li>
+            <li style="float:right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
             </li>
         </div>
         </ul>
