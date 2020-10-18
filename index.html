@@ -1,11 +1,14 @@
 <!DOCTYPE html>
     <style>
-        .header {
+        .head {
             position: fixed;
             width: 100%;
             left: 0;
             top: 0;
             background-color: white;
+        }
+        .logo {
+            border-radius: 50%;
         }
         .footer-country {
             position: fixed;
@@ -46,7 +49,6 @@
             padding-top: 1%;
             font-size: 12px;
         }
-
         ul {
             list-style-type: none;
             margin: 0;
@@ -64,10 +66,19 @@
             color: black;
             font-size: 12px;
         }
+        .head li {
+            margin-right: 15px;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        .head a:link {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
         .footer-country li {
             margin-left: 15px;
             margin-right: 15px;
-            margin-top:3px;
+            margin-top: 3px;
         }
         .footer-links a:link {
             color: grey;
@@ -76,20 +87,21 @@
         }
     </style>
 
-    <Header>
+    <head>
         <ul>
-        <div class="header">
-            <li style="float:left">
-                <a href="#">About</a>
-                <a href="#">Store</a>
+        <div class="head">
+            <li style="float:left;">
+                <a href="#" style="vertical-align: top;">About</a>
+                <a href="#" style="vertical-align: top;">Store</a>
             </li>
-            <li style="float:right">
-                <a href="#">Gmail</a>
-                <a href="#">Images</a>
+        <li style="float:right;">
+                <a href="#" style="vertical-align: top;">Gmail</a>
+                <a href="#" style="vertical-align: top;">Images</a>
+                <img src="/account-pic.png" alt="Account Image" class="logo">
             </li>
         </div>
         </ul>
-    </Header>
+    </head>
 
     <body> 
         <div class="center">
