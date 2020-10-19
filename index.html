@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+<head>
     <style>
-        .head {
+        .header {
             position: fixed;
             width: 100%;
             left: 0;
@@ -44,6 +45,20 @@
             padding-top: 1%;
             position: relative;
         }
+
+        button {
+            background-color: #f0f0f0;
+            padding: 8px 15px;
+            border:1px solid #f0f0f0;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background-color: #ccc;
+            padding: 8px 15px;
+            border:1px solid rgb(112, 112, 112);
+            border-radius: 3px;
+        }
         .language-option {
             margin: auto;
             text-align: center;
@@ -67,12 +82,12 @@
             color: black;
             font-size: 12px;
         }
-        .head li {
+        .header li {
             margin-right: 15px;
             margin-left: 15px;
             margin-top: 15px;
         }
-        .head a:link {
+        .header a:link {
             margin-left: 15px;
             margin-right: 15px;
         }
@@ -91,32 +106,34 @@
             font-size: 14px;
             font-family: arial, sans-serif;
         }
+
     </style>
 
-    <head>
-        <ul>
-        <div class="head">
-            <li style="float:left;">
-                <a href="#" style="vertical-align: top;">About</a>
-                <a href="#" style="vertical-align: top;">Store</a>
-            </li>
-        <li style="float:right;">
-                <a href="#" style="vertical-align: top;">Gmail</a>
-                <a href="#" style="vertical-align: top;">Images</a>
-                <img src="/account-pic.png" alt="Account Image" class="logo">
-            </li>
-        </div>
-        </ul>
-    </head>
+</head>
 
     <body> 
+
+        <ul>
+            <div class="header">
+                <li style="float:left;">
+                    <div style="padding-top:5px;"><a href="#" style="vertical-align: middle;">About</a>
+                    <a href="#" style="vertical-align: middle;">Store</a></div>
+                </li>
+                <li style="float:right;">
+                    <a href="#" style="vertical-align: middle;">Gmail</a>
+                    <a href="#" style="vertical-align: middle;">Images</a>
+                    <img src="/account-pic.png" alt="Account Image" class="logo" style="vertical-align:middle;">
+                </li>
+            </div>
+        </ul>
+
         <div class="center">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
         </div>
             <br>
         <div class="search-bar">
             <form>
-                <input type="text">
+                <input type="text" style="width: 550px; border-radius: 500px; border: 1px solid lightgrey; height: 40px;">
                 <form action="#"></form>
             </form>
         </div>
